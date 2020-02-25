@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.fxmisc.richtext.StyleClassedTextArea?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Helo.chat.Controller">
+   <children>
+      <Pane fx:id="pn_custom" layoutX="68.0" prefHeight="320.0" prefWidth="599.0" style="-fx-background-color: #636363;">
+         <children>
+            <ImageView fx:id="btn_unmute1" fitHeight="25.0" fitWidth="27.0" layoutX="553.0" layoutY="271.0" onMouseClicked="#mute" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Audio_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_mute1" fitHeight="25.0" fitWidth="27.0" layoutX="553.0" layoutY="271.0" onMouseClicked="#unmute" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@icons/icons8_Mute_48px_1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="99.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </Pane>
+      <Pane fx:id="pn_chat" layoutX="68.0" prefHeight="320.0" prefWidth="592.0" style="-fx-background-color: #636363;">
+         <children>
+            <TextField fx:id="txt_message" layoutX="14.0" layoutY="271.0" onKeyPressed="#sendMessage" prefHeight="25.0" prefWidth="420.0" style="-fx-shape: &quot;M200,0 H0 V30 H200 Z&quot;; -fx-background-color: #9b9999;" />
+            <ListView fx:id="list_users" focusTraversable="false" layoutX="443.0" layoutY="26.0" prefHeight="233.0" prefWidth="138.0" style="-fx-background-color: #9b9999;" />
+            <StyleClassedTextArea fx:id="txt_chat" layoutX="14.0" layoutY="26.0" prefHeight="233.0" prefWidth="420.0" style="-fx-background-color: #9b9999;" />
+            <ImageView fx:id="btn_unmute" fitHeight="25.0" fitWidth="27.0" layoutX="553.0" layoutY="271.0" onMouseClicked="#mute" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Audio_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_mute" fitHeight="25.0" fitWidth="27.0" layoutX="553.0" layoutY="271.0" onMouseClicked="#unmute" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@icons/icons8_Mute_48px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pn_beallit" layoutX="68.0" prefHeight="320.0" prefWidth="592.0" style="-fx-background-color: #636363;">
+         <children>
+            <TextField fx:id="txt_ip" layoutX="215.0" layoutY="110.0" prefHeight="25.0" prefWidth="162.0" promptText="IP cím" style="-fx-shape: &quot;M200,0 H0 V30 H200 Z&quot;; -fx-background-color: #cdd5f4;" />
+            <TextField fx:id="txt_username" layoutX="215.0" layoutY="160.0" prefHeight="25.0" prefWidth="162.0" promptText="Név" style="-fx-shape: &quot;M200,0 H0 V30 H200 Z&quot;; -fx-background-color: #cdd5f4;" />
+            <Button fx:id="btn_beallit2" layoutX="270.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#beallit2" style="-fx-shape: &quot;M200,0 H0 V30 H200 Z&quot;; -fx-background-color: #cdd5f4;" text="Mentés" />
+            <Text fx:id="txt_menu_title" layoutX="14.0" layoutY="36.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu_title" visible="false" wrappingWidth="282.13671875">
+               <font>
+                  <Font name="Verdana" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_submenu_title" fill="#393939" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subenu_title" visible="false" wrappingWidth="282.13671875">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_tip" fill="#393939" layoutX="14.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip" visible="false" wrappingWidth="565.13671875">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pn_menu" prefHeight="320.0" prefWidth="70.0" style="-fx-background-color: #333333;">
+         <children>
+            <ImageView fx:id="btn_ujszerver" accessibleHelp="Új szerver" fitHeight="48.0" fitWidth="48.0" layoutX="9.0" layoutY="14.0" onMouseClicked="#ujSzerverpre" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Plus_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_csatlakozas" fitHeight="48.0" fitWidth="48.0" layoutX="6.0" layoutY="62.0" onMousePressed="#csatlakozaspre" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Enter_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_lecsatlakozas" fitHeight="48.0" fitWidth="48.0" layoutX="12.0" layoutY="210.0" onMouseClicked="#lecsatlakozas" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Exit_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_kilepes" fitHeight="48.0" fitWidth="48.0" layoutX="10.0" layoutY="258.0" onMousePressed="#kilepes" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Close_Window_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_beallit" fitHeight="48.0" fitWidth="48.0" layoutX="9.0" layoutY="136.0" onMouseClicked="#customize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8_Settings_48px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pn_home" layoutX="68.0" prefHeight="320.0" prefWidth="592.0" style="-fx-background-color: #636363;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#txt_chat .text{
+ -fx-fill: black;
+ -fx-font-size: 16.0px;
+
+}
+#txt_chat .red{
+	-rtfx-background-color: red;
+	
+}
+
+#txt_chat .green{	
+	-rtfx-background-color: green;
+}
+
+
+.list-view .list-cell:even {
+-fx-background-color: #666666;
+-fx-text-fill: black;
+}
+.list-view .list-cell:odd {
+-fx-background-color: #828282;
+-fx-text-fill: black;
+}
