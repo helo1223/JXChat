@@ -1,0 +1,79 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#txt_chat .text{
+ -fx-fill: black;
+ -fx-font-size: 16.0px;
+
+}
+#txt_chat .red{
+	-rtfx-background-color: red;
+	
+}
+
+#pn_menu{
+	-fx-background-color: #333333;
+}
+
+#pn_chat{
+	-fx-background-color: #636363;
+}
+
+#pn_home{
+	-fx-background-color: #636363;
+}
+
+#pn_beallit{
+	-fx-background-color: #636363;
+}
+
+#pn_custom{
+	-fx-background-color: #636363;
+}
+
+#txt_message{
+	-fx-background-color: #9b9999;
+}
+
+#txt_ip{
+	-fx-background-color: #9b9999;
+    -fx-prompt-text-fill: black;
+}
+
+#txt_username{
+	-fx-background-color: #9b9999;
+	-fx-prompt-text-fill: black;
+}
+#txt_chat{
+	-fx-background-color: #9b9999;
+}
+
+#list_users{
+	-fx-background-color: #9b9999;
+}
+
+#txt_chat .green{	
+	-rtfx-background-color: green;
+}
+
+#btn_beallit2{
+	 -fx-background-color:  #9b9999;
+}
+
+
+.switch .thumb-area{
+	-fx-background-color: #7289da;
+}
+
+.switch:selected .thumb-area {
+    -fx-background-color: #2c2f33;
+}
+
+.list-view .list-cell:even {
+-fx-background-color: #9b9999;
+-fx-text-fill: black;
+}
+.list-view .list-cell:odd {
+-fx-background-color: #636363;
+-fx-text-fill: black;
+}
